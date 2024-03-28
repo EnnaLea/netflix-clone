@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/netflix-clone/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

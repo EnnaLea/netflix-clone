@@ -1,0 +1,55 @@
+.movie-card {
+    width: 200px;
+    height: 300px;
+  
+    .title {
+      display: none;
+      position: absolute;
+      bottom: 8px;
+      background-color: rgb(88, 87, 87);
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+    }
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.3s ease-in-out;
+  
+      .title {
+        display: block;
+      }
+    }
+  }
+
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+  /* iPhone 13 specific styles */
+  .movie-card {
+    width: 150px;
+    height: 225px;
+
+    .title {
+      font-size: 10px;
+    }
+  }
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+  /* tablet specific styles */
+  .movie-card {
+    width: 250px;
+    height: 375px;
+
+    .title {
+      font-size: 14px;
+    }
+  }
+}
